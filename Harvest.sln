@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest", "Harvest\Harvest.csproj", "{4607F976-9FEB-444A-BF30-5DA0A36D04B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Domain", "Harvest.Domain\Harvest.Domain.csproj", "{423E2B65-09A3-4843-B071-25442C900535}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4607F976-9FEB-444A-BF30-5DA0A36D04B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4607F976-9FEB-444A-BF30-5DA0A36D04B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4607F976-9FEB-444A-BF30-5DA0A36D04B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4607F976-9FEB-444A-BF30-5DA0A36D04B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423E2B65-09A3-4843-B071-25442C900535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423E2B65-09A3-4843-B071-25442C900535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423E2B65-09A3-4843-B071-25442C900535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423E2B65-09A3-4843-B071-25442C900535}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D6EDF7A-1409-4828-AD9E-4313CBBC3383}
+	EndGlobalSection
+EndGlobal
