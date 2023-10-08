@@ -1,16 +1,11 @@
 image: microsoft/dotnet:latest
 
 build:
-    stage: build
-    script: 
-        - 'dotnet build --no-restore'
+  stage: build
+  script:
+    - "dotnet build --no-restore"
 
 test:
-    stage: test
-    script: 
-        - 'dotnet test --no-restore'
-
-deploy:
-    stage: deploy
-    environment: production
-
+  stage: test
+  script:
+    - "dotnet test --no-restore"
