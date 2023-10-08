@@ -1,5 +1,14 @@
 image: microsoft/dotnet:latest
 
+variables:
+  # 1) Name of directory where restore and build objects are stored.
+  OBJECTS_DIRECTORY: "obj"
+  # 2) Name of directory used for keeping restored dependencies.
+  NUGET_PACKAGES_DIRECTORY: ".nuget"
+  # 3) A relative path to the source code from project repository root.
+  # NOTE: Please edit this path so it matches the structure of your project!
+  SOURCE_CODE_PATH: "*/*/"
+
 build:
   stage: build
   script:
@@ -9,3 +18,8 @@ test:
   stage: test
   script:
     - "dotnet test --no-restore"
+
+deploy:
+  stage: deploy
+  script: echo "test script"
+  environment: production
