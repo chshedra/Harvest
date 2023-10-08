@@ -1,4 +1,4 @@
-image: microsoft/dotnet:latest
+image: microsoft/dotnet:sdk:7.0
 
 variables:
   # 1) Name of directory where restore and build objects are stored.
