@@ -32,7 +32,7 @@ steps:
     inputs:
       repository: $(imageName)
       command: build
-      Dockerfile: app/Dockerfile
+      Dockerfile: Dockerfile
 
   - task: PublishBuildArtifacts@1
     displayName: "publish artifacts"
