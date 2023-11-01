@@ -36,3 +36,7 @@ steps:
 
   - task: PublishBuildArtifacts@1
     displayName: "publish artifacts"
+    inputs:
+      buildType: "current"
+      artifactName: "harvest-docker-image"
+      targetPath: "$(Pipeline.Workspace)"
