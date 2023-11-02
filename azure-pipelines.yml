@@ -27,9 +27,5 @@ steps:
       Dockerfile: Dockerfile
       tags: latest
       arguments: "-o $(build.artifactstagingdirectory)"
-
-  - task: PublishBuildArtifacts@1
-    displayName: "publish artifacts"
-    inputs:
       artifactName: "harvest-docker-image"
       PathtoPublish: "$(build.artifactstagingdirectory)"
