@@ -29,14 +29,14 @@ steps:
       arguments: "-o $(build.artifactstagingdirectory)"
 
   - task: bash@3
-      displayname: save docker image
-      inputs:
-        targettype: 'inline'
-        script: |
-          docker save $(imageName):$(tag) -o $(pipeline.workspace)/harvest-image.tar
+    displayname: save docker image
+    inputs:
+      targettype: "inline"
+      script: |
+        docker save $(imageName):$(tag) -o $(pipeline.workspace)/harvest-image.tar
 
-    - task: publishpipelineartifact@1
-      inputs:
-        targetpath: '$(pipeline.workspace)/harvest-image.tar'
-        artifact: 'pipeline-artifact'
-        publishlocation: 'pipeline'
+  - task: publishpipelineartifact@1
+    inputs:
+      targetpath: "$(pipeline.workspace)/harvest-image.tar"
+      artifact: "pipeline-artifact"
+      publishlocation: "pipeline"
