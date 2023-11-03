@@ -29,7 +29,7 @@ steps:
       arguments: "-o $(build.artifactstagingdirectory)"
 
   - task: bash@3
-    displayname: save docker image
+    displayName: save docker image
     inputs:
       targettype: "inline"
       script: |
