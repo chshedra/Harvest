@@ -34,7 +34,7 @@ steps:
     inputs:
       targettype: "inline"
       script: |
-        docker save $(imageName):$(tag) -o $(pipeline.workspace)/harvest-image.tar
+        docker save $(imageName):$sudo dnf install docker -y $(tag) -o $(pipeline.workspace)/harvest-image.tar
 
   - task: publishpipelineartifact@1
     inputs:
